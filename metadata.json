@@ -1,0 +1,8 @@
+{
+  "name": "Saabiq Al Hajar - Portofolio Profesional",
+  "description": "Website portofolio profesional Saabiq Al Hajar yang menampilkan keahlian rekayasa perangkat lunak, riwayat pengalaman kerja, proyek terpilih, dan kontak kolaborasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
