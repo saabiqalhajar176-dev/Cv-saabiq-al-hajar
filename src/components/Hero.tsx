@@ -10,7 +10,16 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenResume }) => {
+  const [imgSrc, setImgSrc] = useState(PERSONAL_INFO.avatarImage);
   const [imageError, setImageError] = useState(false);
+
+  const handleImageError = () => {
+    if (imgSrc !== '/assets/images/saabiq_real_photo.jpg') {
+      setImgSrc('/assets/images/saabiq_real_photo.jpg');
+    } else {
+      setImageError(true);
+    }
+  };
 
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
@@ -103,10 +112,10 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenResume }) => {
               
               {!imageError ? (
                 <img
-                  src={PERSONAL_INFO.avatarImage}
+                  src={imgSrc}
                   alt={PERSONAL_INFO.name}
                   referrerPolicy="no-referrer"
-                  onError={() => setImageError(true)}
+                  onError={handleImageError}
                   className="w-full h-full object-cover object-[center_20%] group-hover:scale-[1.02] transition-transform duration-500"
                 />
               ) : (

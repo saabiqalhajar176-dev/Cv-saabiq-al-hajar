@@ -108,6 +108,12 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, currentLang, o
                 src={PERSONAL_INFO.avatarImage}
                 alt={PERSONAL_INFO.name}
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== '/assets/images/saabiq_real_photo.jpg') {
+                    target.src = '/assets/images/saabiq_real_photo.jpg';
+                  }
+                }}
                 className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl object-cover object-[center_20%] border border-slate-700 print:border-gray-400 shadow-md"
               />
             </div>

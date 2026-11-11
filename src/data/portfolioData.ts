@@ -1,4 +1,9 @@
 import { CertificationItem, EducationItem, Experience, Project, SkillItem, TestimonialItem } from '../types/portfolio';
+import avatarImage from '../assets/images/saabiq_real_photo.jpg';
+import projectFintechImg from '../assets/images/project_fintech_analytics_1792383356327.jpg';
+import projectEcommerceImg from '../assets/images/project_ecommerce_store_1792383356683.jpg';
+import projectCloudImg from '../assets/images/project_cloud_devops_flow_1792383357457.jpg';
+import projectMobileImg from '../assets/images/project_mobile_superapp_1792383357549.jpg';
 
 export const PERSONAL_INFO = {
   name: 'Saabiq Al Hajar',
@@ -20,7 +25,7 @@ export const PERSONAL_INFO = {
   github: 'https://github.com',
   linkedin: 'https://linkedin.com',
   whatsapp: 'https://wa.me/6282134567890',
-  avatarImage: '/src/assets/images/saabiq_real_photo.jpg',
+  avatarImage: avatarImage,
   stats: [
     { value: '4+', label: { id: 'Tahun Pengalaman', en: 'Years Experience' } },
     { value: '28+', label: { id: 'Proyek Selesai', en: 'Delivered Projects' } },
@@ -72,7 +77,7 @@ export const PROJECTS: Project[] = [
     },
     role: 'Lead Frontend & Data Visualization Engineer',
     year: '2025',
-    image: '/src/assets/images/project_fintech_analytics_1792383356327.jpg',
+    image: projectFintechImg,
     metrics: '+45% Kecepatan Analisis Portofolio',
     technologies: ['React 19', 'TypeScript', 'Tailwind CSS', 'D3.js', 'WebSocket', 'Node.js', 'PostgreSQL'],
     keyFeatures: {
@@ -116,7 +121,7 @@ export const PROJECTS: Project[] = [
     },
     role: 'Full-Stack Software Engineer',
     year: '2024',
-    image: '/src/assets/images/project_ecommerce_store_1792383356683.jpg',
+    image: projectEcommerceImg,
     metrics: '+38% Peningkatan Conversion Rate',
     technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Stripe API', 'Prisma', 'Redis Cache'],
     keyFeatures: {
@@ -160,7 +165,7 @@ export const PROJECTS: Project[] = [
     },
     role: 'Full-Stack & DevOps Engineer',
     year: '2024',
-    image: '/src/assets/images/project_cloud_devops_flow_1792383357457.jpg',
+    image: projectCloudImg,
     metrics: '-62% Waktu Siklus Deployment',
     technologies: ['TypeScript', 'React', 'Docker', 'Kubernetes', 'Express', 'Prometheus', 'Tailwind CSS'],
     keyFeatures: {
@@ -204,7 +209,7 @@ export const PROJECTS: Project[] = [
     },
     role: 'Lead Mobile Application Engineer',
     year: '2023',
-    image: '/src/assets/images/project_mobile_superapp_1792383357549.jpg',
+    image: projectMobileImg,
     metrics: '4.9★ Rating di App Store & Play Store',
     technologies: ['React Native', 'TypeScript', 'Redux Toolkit', 'FastAPI', 'PostgreSQL', 'Mapbox SDK'],
     keyFeatures: {
